@@ -83,9 +83,7 @@ foreach ($columns as $key => $value) {
   $safe_name = $options->html($key);
   $safe_val = $options->html($value);
 
-  // we try to guess why type of input to show
-  // if you don't like this approch you can always use the classic one
-  // but i beleive this is more time saving in development and it will work better
+
 
   if(in_array($key, array("register", "email_validation", "captcha"))) // add in this array columns that you want to have enabled/disabled select menu
   echo "
